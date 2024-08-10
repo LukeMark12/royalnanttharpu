@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ece9e6, #ffffff);
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #555;
+        }
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .section:hover {
+            transform: translateY(-10px);
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .room {
+            margin-bottom: 20px;
+        }
+        .book-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        .book-button:hover {
+            background-color: #45a049;
+        }
+        /* Image Slider */
+        .slider {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slides img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <h1>Royal Nant Thar Pu Hotel</h1>
+            <p>Experience the epitome of comfort and luxury</p>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#rooms">Rooms</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div id="rooms" class="section">
+            <h2>Rooms</h2>
+            <div class="room">
+                <h3>Deluxe Sea View</h3>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="deluxe1.jpg" alt="Deluxe Room 1">
+                        <img src="deluxe2.jpg" alt="Deluxe Room 2">
+                        <img src="deluxe3.jpg" alt="Deluxe Room 3">
+                        <img src="deluxe4.jpg" alt="Deluxe Room 4">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <p>Experience the ultimate in luxury with our Deluxe Rooms, featuring a king-sized bed, modern amenities, and stunning beach views.</p>
+                <p><strong>Price:</strong> 350,000mmk per night</p>
+                <button class="book-button" onclick="location.href='#contact'">Book Now</button>
+            </div>
+            <div class="room">
+                <h3>Deluxe 2nd Sea View</h3>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="deluxe1.jpg" alt="Deluxe Room 1">
+                        <img src="deluxe2.jpg" alt="Deluxe Room 2">
+                        <img src="deluxe3.jpg" alt="Deluxe Room 3">
+                        <img src="deluxe4.jpg" alt="Deluxe Room 4">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <p>Experience the ultimate in luxury with our Deluxe Rooms, featuring a king-sized bed, modern amenities, and stunning beach views.</p>
+                <p><strong>Price:</strong> 250,000mmk per night</p>
+                <button class="book-button" onclick="location.href='#contact'">Book Now</button>
+            </div>
+            <div class="room">
+                <h3>Deluxe Garden View</h3>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="deluxe1.jpg" alt="Deluxe Room 1">
+                        <img src="deluxe2.jpg" alt="Deluxe Room 2">
+                        <img src="deluxe3.jpg" alt="Deluxe Room 3">
+                        <img src="deluxe4.jpg" alt="Deluxe Room 4">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <p>Experience the ultimate in luxury with our Deluxe Rooms, featuring a king-sized bed, modern amenities, and stunning beach views.</p>
+                <p><strong>Price:</strong> 150,000mmk per night</p>
+                <button class="book-button" onclick="location.href='#contact'">Book Now</button>
+            </div>
+            <div class="room">
+                <h3>Family Suite 5 Pax room</h3>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="suite1.jpg" alt="Suite Room 1">
+                        <img src="suite2.jpg" alt="Suite Room 2">
+                        <img src="suite3.jpg" alt="Suite Room 3">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <p>Indulge in our spacious Suite, offering a separate living area, premium furnishings, and top-notch services to enhance your stay.</p>
+                <p><strong>Price:</strong> 500,000mmk per night</p>
+                <button class="book-button" onclick="location.href='#contact'">Book Now</button>
+            </div>
+            <!-- Add more room listings if necessary -->
+        </div>
+        <script>
+            let slideIndex = 0;
+            showSlides(slideIndex);
+        
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+        
+            function showSlides(n) {
+                let i;
+                let slides = document.querySelectorAll('.slides');
+                if (n >= slides[0].children.length) {slideIndex = 0}
+                if (n < 0) {slideIndex = slides[0].children.length - 1}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.transform = `translateX(-${slideIndex * 100}%)`;
+                }
+            }
+        
+        </script>
+    </body>
+</html>
